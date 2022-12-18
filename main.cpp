@@ -30,7 +30,7 @@ int main() {
     std::cout<<"\n";
 */
 /*
-    std::for_each(bollvec.begin(),bollvec.end(),directutskrivning);
+    std::for_each(bollvec.begin(),bollvec.end(),MyPrint());
     std::cout<<"\n\n";
 */
 /*

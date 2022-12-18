@@ -21,12 +21,7 @@ public:
     double getSpeed() const;
     std::string getName() const;
     std::string SetName(std::string setname);
-    /*
-    double getsumma();
-    void setsumma(double value);
-    void setcount(int counter);
-    int getcounter();
-     */
+
 };
 
 

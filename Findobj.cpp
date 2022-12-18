@@ -3,18 +3,6 @@
 //
 
 #include "Findobj.h"
-/*
-bool Findobj::is_bigger(Ball &boll, double speed) {
-    return speed > boll.getSpeed();
-}*/
-/*
-bool Findobj::comp(Ball &boll) {
-    double value;
-    std::cout<<"insert a speed plz: ";
-    std::cin>>value;
-    return value > boll.getSpeed();
-}
-*/
 
 bool Findobj::operator()(Ball &boll) {
     double temp= this->value;
@@ -38,15 +26,7 @@ bool isEqul::operator()(Ball &boll, Ball &Arr) {
 bool searchseq::operator()(Ball &boll, Ball &Arr) {
     return boll.getName()==Arr.getName() && boll.getSpeed()==Arr.getSpeed();
 }
-/*
-bool MyBinOp::operator()(Ball &boll, Ball &bol) {
-    double sum=0;
-    sum=boll.getSpeed()+bol.getSpeed();
-    this->total+=sum;
-    return total;
 
-}
-*/
 double MyBinOp::operator()(double boll, Ball &bol) {
     double sum=0;
     sum+=boll+bol.getSpeed();
